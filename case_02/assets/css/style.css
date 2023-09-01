@@ -1,0 +1,56 @@
+
+
+body > section {
+    height: 100vh;
+    background-color: #2fd4e8;
+    position: relative;
+}
+
+body > section > div {
+    background-color: lightslategrey;
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+body > section > div::before {
+
+    content: "";
+    border: 10px solid white;
+    border-top-color: #ff253a;
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+div:hover::before {
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transform: rotate(360deg);
+}
+
+
+body > section > div > h3 {
+
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+}
