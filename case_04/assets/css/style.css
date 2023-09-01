@@ -1,0 +1,33 @@
+div{
+    position: absolute;
+
+    width: 20px;
+    aspect-ratio: 1/1;
+    border: red solid 5px;
+    border-radius: 100%;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    animation: my-animation 2s infinite;
+
+}
+
+@keyframes my-animation {
+    from{
+        width: 20px;
+
+
+    }
+    to{
+        width: 200px;
+        opacity: 0;
+
+
+
+    }
+}
+
