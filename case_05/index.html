@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case_05</title>
+
+    <style>
+        :root{
+            --slide-width: 50vw;
+            --slide-height: 50vh;
+        }
+
+        main{
+            width: var( --slide-width);
+            height: var(--slide-height);
+            border: 5px solid red;
+            overflow: hidden;
+
+            position: absolute;
+
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+
+        }
+
+        section{
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            animation-name: my-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+
+        div{
+            width: var(--slide-width);
+            height: var(--slide-height);
+
+        }
+
+
+        div:first-child{
+            background:url("assets/image/slide1.jpeg");
+            background-size: cover;
+            background-position:center ;
+        }
+        div:nth-child(2){
+            background:url("assets/image/slide2.jpeg");
+            background-size: cover;
+            background-position:center ;
+        }
+        div:nth-child(3){
+            background:url("assets/image/slide3.jpeg");
+            background-size: cover;
+            background-position:center ;
+        }
+        div:nth-child(4){
+            background:url("assets/image/slide4.jpeg");
+            background-size: cover;
+            background-position:center ;
+        }
+
+        @keyframes my-animation {
+            0%,20%{
+                transform: translateX(0%);
+            }
+            25%,45%{
+                transform: translateX(-25%);
+            }
+            75%,70%{
+                transform: translateX(50%);
+            }
+            100%,100%{
+                transform: translateX(75%);
+            }
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>
